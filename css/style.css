@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+* {
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+.button-black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    min-width: 1200px;
+    box-shadow: 0px 0px 14px -4px #ccc;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 70px;
+}
+
+nav h1 {
+    display: flex;
+    width: 212px;
+    height: 24px;
+    padding: 10px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    padding: 32px;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    max-height: 70px;
+    font-family: 'Inter', sans-serif;
+}
+
+.dark {
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px 0px 8px 3px #ccc;
+    border-radius: 8px;
+    width: 112px;
+    height: 43px;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+.papai {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.products-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.listaProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 259px;
+    height: 336px;
+    box-shadow: 0px 0px 14px -4px #ccc;
+    gap: 6px;
+    font-family: 'Inter', sans-serif;
+    padding: 3px;
+}
+
+.backImg {
+    background: rgba(245, 245, 245, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 191px;
+    height: 140px;
+}
+
+.card h2 {
+    font-size: 18px;
+}
+
+.departamento {
+    background-color: rgb(250, 83, 83);
+    width: 60px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    gap: 2px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.card .descricao {
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: 400;
+    width: 253px;
+    min-height: 68px;
+    max-height: 70px;
+}
+
+.card .tagPreco {
+    font-size: 14px;
+}
+
+.card .tagBtn {
+    background-color: rgb(177, 248, 255);
+    width: 160px;
+    height: 25px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.btnCarrinho {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.carrinhoBtns {
+    display: flex;
+}
+
+
+.btnCarrinho .inputBusca {
+    height: 50px;
+    width: 246px;
+    border-radius: 0px;
+    border: 1px solid rgba(245, 245, 245, 1)
+}
+
+.btnCarrinho .inputBtn {
+    width: 96px;
+    background-color: rgb(177, 248, 255);
+    font-weight: 600;
+}
+
+.btnCarrinho .carrinho {
+    display: flex;
+    flex-direction: column;
+    width: 342px;
+}
+
+.carrinho h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(177, 248, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    color: black;
+}
+
+.carrinho ul {
+    background-color: grey;
+    overflow-y: scroll;
+    min-height: 300px;
+    max-height: 600px;
+}

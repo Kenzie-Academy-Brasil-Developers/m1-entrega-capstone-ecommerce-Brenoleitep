@@ -1,64 +1,91 @@
 // Banco de dados dos produtos
-
 const data = [
   {
     id: 1,
-    img: "../img/jaqueta.svg",
-    nameItem: "Lightweight Jacket",
-    description:
-      "Adicione um pouco de energia ao seu guarda-roupa de inverno com esta jaqueta vibrante...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    img: "img/relampago.png",
+    nome: "Relâmpago Marquinhos",
+    categoria: "Corrida",
+    description: "O Relâmpago Marquinhos é o personagem principal, ele é um personagem de corrida, o mais rápido de todos",
+    valor: 99.90,
   },
   {
     id: 2,
-    img: "../img/gorro.svg",
-    nameItem: "Black Hat",
-    description:
-      "O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável que garante que...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
+    img: "img/cruzRamirez.png",
+    nome: "Cruz Ramirez",
+    categoria: "Corrida",
+    description: "A Cruz Ramirez é uma personagem secundária. Importante? Talvez! No fundo acho que nem ela sabe se é importante.",
+    valor: 29.90,
   },
   {
     id: 3,
-    img: "../img/mascara.svg",
-    nameItem: "Mask",
-    description:
-      "Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...",
-    value: 40,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Acessórios"],
+    img: "img/filmore.png",
+    nome: "Filmore Kombi",
+    categoria: "Outros",
+    description: "O Filmore é uma kombi Wolksvagen, ele é o agente da natureza, amante dos óleos naturais.",
+    valor: 19.90
   },
   {
     id: 4,
-    img: "../img/camiseta_preta.svg",
-    nameItem: "T-Shirt",
-    description:
-      "Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    img: "img/hudson.png",
+    nome: "Doc Hudson",
+    categoria: "Passeio",
+    description: "O Hudson é o melhor professor que se pode ter, em Carros ele é um carro legal, mas na vida real ele foi quem me ensinou a fazer isso aqui!",
+    valor: 999.90
   },
   {
     id: 5,
-    img: "../img/camiseta_branca.svg",
-    nameItem: "Short-Sleeve T-Shirt",
-    description:
-      "Agora você encontrou a camiseta básica do seu guarda-roupa. É feito de um mais grosso...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    img: "img/luigi.png",
+    nome: "Luigi",
+    categoria: "Passeio",
+    description: "O Luigi é um italiano rabugento, ele é mais conhecido por ser o chefe do grande Guido.",
+    valor: 19.90
   },
   {
     id: 6,
-    img: "../img/moletom.svg",
-    nameItem: "Champion Packable Jacket",
-    description:
-      "Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...",
-    value: 100,
-    addCart: "Adicionar ao carrinho",
-    tag: ["Camisetas"],
+    img: "img/mack.png",
+    nome: "Mack",
+    categoria: "Outros",
+    description: "O Mack é o caminhão que deu origem a tudo! Ele dormiu no ponto e passou uma lição: Se dormir, não dirija!!",
+    valor: 39.90
   },
+  {
+    id: 7,
+    img: "img/sally.png",
+    nome: "Sally",
+    categoria: "Passeio",
+    description: "A Sally é uma personagem legal, porém sem muito destaque nas pistas! Ela é ideal se você procura um carro belo.",
+    valor: 39.90
+  },
+  {
+    id: 8,
+    img: "img/sargento.png",
+    nome: "Sargento",
+    categoria: "Outros",
+    description: "O Sargento é um personagem rabugento, esse com certeza é o que as crianças não gostam, mas se você quiser compre!",
+    valor: 9.90
+  },
+  {
+    id: 9,
+    img: "img/towmatter.png",
+    nome: "Towmatter",
+    categoria: "Outros",
+    description: "O Towmatter é o melhor amigo do Relâmpago Marquinhos, ele é um dos melhores, sempre muito engraçado e carismático.",
+    valor: 199.90
+  },
+  {
+    id: 10,
+    img: "img/trator.png",
+    nome: "Trator",
+    categoria: "Corrida",
+    description: "O Trator é o Trator.",
+    valor: 149.90
+  },
+  {
+    id: 11,
+    img: "img/xerife_dock.png",
+    nome: "Dock",
+    categoria: "Corrida",
+    description: "O Dock é o Xerife, ele manda em tudo e corre muito atrás dos fora da lei!.",
+    valor: 119.90
+  }
 ];
