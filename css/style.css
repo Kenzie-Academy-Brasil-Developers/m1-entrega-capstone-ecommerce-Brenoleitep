@@ -25,6 +25,7 @@
     flex-direction: column;
     width: 1200px;
     margin: 0 auto;
+    min-height: 1600px;
 }
 
 header {
@@ -50,21 +51,30 @@ nav h1 {
     font-family: 'Inter', sans-serif;
 }
 
+
 nav ul {
     display: flex;
     padding: 32px;
-    gap: 10px;
+    gap: 20px;
     font-size: 16px;
     line-height: 16px;
     max-height: 70px;
     font-family: 'Inter', sans-serif;
 }
 
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: red;
+}
+
 .dark {
     background-color: rgb(255, 255, 255);
     box-shadow: -2px 0px 8px 3px #ccc;
-    border-radius: 8px;
     width: 112px;
+    cursor: pointer;
     height: 43px;
     color: black;
     font-family: 'Inter', sans-serif;
@@ -83,6 +93,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin: 0 auto;
 }
 
 .listaProdutos {
@@ -113,6 +124,14 @@ nav ul {
     height: 140px;
 }
 
+.products-content .tagRemocao {
+    display: none;
+}
+
+.listaProdutos .tagRemocao {
+    display: none;
+}
+
 .card h2 {
     font-size: 18px;
 }
@@ -135,6 +154,11 @@ nav ul {
     width: 253px;
     min-height: 68px;
     max-height: 70px;
+    text-align: justify;
+}
+
+.descricao p:hover {
+    font-weight: 700;
 }
 
 .card .tagPreco {
@@ -142,7 +166,7 @@ nav ul {
 }
 
 .card .tagBtn {
-    background-color: rgb(177, 248, 255);
+    background-color: white;
     width: 160px;
     height: 25px;
     border-radius: 7px;
@@ -150,6 +174,17 @@ nav ul {
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.tagBtn:hover {
+    background-color: rgb(177, 248, 255);
+    width: 160px;
+    height: 25px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 14px -4px rgb(49, 217, 255);
 }
 
 .btnCarrinho {
@@ -183,23 +218,100 @@ nav ul {
     display: flex;
     flex-direction: column;
     width: 342px;
+    justify-content: center;
 }
 
-.carrinho h2 {
+.carrinho .tituloCarrinho {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 342px;
+    height: 50px;
     background-color: rgb(177, 248, 255);
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    height: 50px;
     color: black;
 }
 
 .carrinho ul {
-    background-color: grey;
+    display: flex;
+    background-color: rgb(233, 233, 233);
     overflow-y: scroll;
     min-height: 300px;
     max-height: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.carrinho ul li {
+    display: flex;
+    background-color: white;
+    height: 120px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    color: black;
+
+}
+
+.carrinho .cardCarrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.carrinho h4 {
+    display: none;
+}
+
+.carrinho .descricao {
+    display: none;
+}
+
+.carrinho .tagBtn {
+    display: none;
+    color: white;
+    justify-items: flex-start;
+}
+
+.carrinho .tagRemocao {
+    background-color: white;
+    width: 130px;
+    align-items: flex-start;
+    display: flex;
+}
+
+.carrinho .tagNome {
+    display: flex;
+    min-width: 150px;
+    max-width: 170px;
+}
+
+.carrinho ul li {
+    min-width: 340px;
+    height: 110px;
+}
+
+.carrinho ul li .backImg {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.carrinho ul li img {
+    width: 150px;
+    height: 110px;
+}
+
+.carrinho_info {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(177, 248, 255);
+    flex-wrap: wrap;
+    gap: 20px;
+    color: black;
+    flex-direction: column;
 }
