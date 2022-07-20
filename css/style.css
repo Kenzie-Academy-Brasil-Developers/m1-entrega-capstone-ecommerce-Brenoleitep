@@ -94,6 +94,7 @@ nav ul li:hover {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0 auto;
+    gap: 20px;
 }
 
 .listaProdutos {
@@ -114,7 +115,7 @@ nav ul li:hover {
 }
 
 .backImg {
-    background: rgba(245, 245, 245, 1);
+    background: rgb(236, 250, 255);
     display: flex;
     justify-content: center;
 }
@@ -219,6 +220,7 @@ nav ul li:hover {
     flex-direction: column;
     width: 342px;
     justify-content: center;
+
 }
 
 .carrinho .tituloCarrinho {
@@ -240,69 +242,71 @@ nav ul li:hover {
     overflow-y: scroll;
     min-height: 300px;
     max-height: 600px;
-    flex-wrap: wrap;
+    gap: 7px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.carrinho ul .carrinhoVazio {
+    display: flex;
+    width: 325px;
+    align-items: center;
+    font-size: 25px;
     justify-content: center;
-    gap: 15px;
+    height: 300px;
+    color: black;
 }
 
 .carrinho ul li {
     display: flex;
-    background-color: white;
-    height: 120px;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: space-around;
-    color: black;
-
-}
-
-.carrinho .cardCarrinho {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    border-radius: 8px;
+    background-color: white;
+    height: 110px;
+    color: black;
+    width: 310px;
+    font-family: 'Inter', sans-serif;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    gap: 10px;
 }
 
-.carrinho h4 {
-    display: none;
-}
-
-.carrinho .descricao {
-    display: none;
-}
-
-.carrinho .tagBtn {
-    display: none;
-    color: white;
-    justify-items: flex-start;
-}
 
 .carrinho .tagRemocao {
     background-color: white;
-    width: 130px;
     align-items: flex-start;
     display: flex;
-}
-
-.carrinho .tagNome {
-    display: flex;
+    font-weight: 600;
+    font-size: 14px;
     min-width: 150px;
     max-width: 170px;
 }
 
-.carrinho ul li {
-    min-width: 340px;
-    height: 110px;
+.cardCarrinho .tituloItem {
+    display: flex;
+    font-size: 14px;
+    min-width: 150px;
+    max-width: 170px;
 }
+
+.cardCarrinho .tagPreco {
+    display: flex;
+    font-size: 14px;
+    min-width: 150px;
+    max-width: 170px;
+}
+
 
 .carrinho ul li .backImg {
     width: 100px;
     height: 100px;
-    
+
 }
 
 .carrinho ul li img {
-    width: 150px;
+    width: 120px;
     height: 110px;
 }
 

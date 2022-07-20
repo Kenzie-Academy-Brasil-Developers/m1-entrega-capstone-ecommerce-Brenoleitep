@@ -141,9 +141,29 @@ secaoProdutos.addEventListener("click", adicionarProduto)
 
 let carrinhoItens = []
 
+let carrinhoVazio = document.createElement("h1")
+carrinhoVazio.classList.add("carrinhoVazio")
+carrinhoVazio.innerHTML = "Carrinho vazio :( <br> Adicione itens."
 
-function listarCarrinho (produtos) {
-  
+if (carrinhoItens.length == 0) {
+  secaoCarrinho.appendChild(carrinhoVazio)
+}
+
+let carrinho_info = document.querySelector(".carrinho_info")
+let qtdProdutos = document.querySelector(".qtdProdutos")
+let precoTotal = document.querySelector(".precoTotal")
+
+
+let length = carrinhoItens.length
+let preco = somar(carrinhoItens)
+
+qtdProdutos.innerHTML = `<strong>QTD Produtos:</strong> ${length}`
+precoTotal.innerHTML = `<strong>Preço Total:</strong> R$${preco}`
+
+
+
+function listarCarrinho(produtos) {
+
 
   secaoCarrinho.innerHTML = ""
 
@@ -160,17 +180,18 @@ function criarCardCarrinho(produto, index) {
   let img = produto.img
   let valor = produto.valor
   let id = produto.id
-  
+
 
   let tagLi = document.createElement("li")
-  let tagNome = document.createElement("h2")
+  let tagNome = document.createElement("h4")
   let tagRemocao = document.createElement("button")
   //pode criar o event aqui
   let tagImg = document.createElement("img")
   let tagValor = document.createElement("h3")
 
+
   tagLi.classList.add("cardCarrinho")
-  tagNome.classList.add("tagNome")
+  tagNome.classList.add("tituloItem")
   tagValor.classList.add("tagPreco")
   tagRemocao.classList.add("tagRemocao")
 
@@ -181,14 +202,13 @@ function criarCardCarrinho(produto, index) {
   }
 
 
-  tagNome = nome
+  tagNome.innerHTML = nome
   tagImg.src = img
   tagImg.alt = nome
   tagRemocao.innerHTML = "Remover Produto"
-  tagValor = `R$${valor}`
+  tagValor.innerHTML = `R$${valor}`
 
   tagLi.append(tagImg, tagNome, tagRemocao, tagValor)
-  secaoCarrinho.appendChild(tagLi)
 
   return tagLi
 
@@ -206,7 +226,7 @@ function adicionarProduto(event) {
       }
     })
     adicionarCarrinho(produtos)
-    
+
   }
 }
 
@@ -229,7 +249,7 @@ function removerItem(event) {
   if (btnRemover.tagName == "BUTTON") {
 
     let index = btnRemover.index
-    console.log(btnRemover)
+
     secaoCarrinho.innerHTML = ""
 
     carrinhoItens.splice(index, 1)
@@ -251,6 +271,16 @@ function carrinhoInfo(arr) {
 
   qtdProdutos.innerHTML = `<strong>QTD Produtos:</strong> ${length}`
   precoTotal.innerHTML = `<strong>Preço Total:</strong> R$${preco}`
+
+  let carrinhoVazio = document.createElement("h1")
+  carrinhoVazio.classList.add("carrinhoVazio")
+
+  carrinhoVazio.innerHTML = "Carrinho vazio :( <br> Adicione itens."
+
+  if (carrinhoItens.length == 0) {
+    secaoCarrinho.appendChild(carrinhoVazio)
+  }
+
 
 }
 
