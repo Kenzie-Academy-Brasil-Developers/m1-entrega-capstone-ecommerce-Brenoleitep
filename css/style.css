@@ -25,7 +25,7 @@
     flex-direction: column;
     width: 1200px;
     margin: 0 auto;
-    min-height: 1600px;
+    min-height: 1900px;
 }
 
 header {
@@ -185,7 +185,7 @@ nav ul li:hover {
 }
 
 .card:hover {
-    box-shadow: 0px 0px 14px -4px rgb(49, 217, 255);
+    box-shadow: 0px 3px 24px 1px rgb(49 217 255)
 }
 
 .btnCarrinho {
@@ -211,16 +211,20 @@ nav ul li:hover {
 
 .btnCarrinho .inputBtn {
     width: 96px;
-    background-color: rgb(177, 248, 255);
+    background-color: rgb(0, 0, 0);
     font-weight: 600;
+    color: white;
 }
 
 .btnCarrinho .carrinho {
     display: flex;
     flex-direction: column;
     width: 342px;
-    justify-content: center;
+    justify-content: center;    
+}
 
+.carrinho:hover {
+    box-shadow: -4px 3px 24px 1px rgb(49 217 255)
 }
 
 .carrinho .tituloCarrinho {
@@ -229,20 +233,19 @@ nav ul li:hover {
     justify-content: center;
     width: 342px;
     height: 50px;
-    background-color: rgb(177, 248, 255);
+    background-color: rgb(0, 0, 0);
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: black;
+    color: white;
 }
 
 .carrinho ul {
     display: flex;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(0, 0, 0);
     overflow-y: scroll;
     min-height: 300px;
     max-height: 600px;
-    gap: 7px;
     flex-direction: column;
     align-items: center;
     align-content: center;
@@ -255,10 +258,12 @@ nav ul li:hover {
     font-size: 25px;
     justify-content: center;
     height: 300px;
-    color: black;
+    color: white;
 }
 
 .carrinho ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -313,9 +318,9 @@ nav ul li:hover {
 .carrinho_info {
     display: flex;
     padding: 20px;
-    background-color: rgb(177, 248, 255);
+    background-color: rgb(0, 0, 0);
     flex-wrap: wrap;
     gap: 20px;
-    color: black;
+    color: white;
     flex-direction: column;
 }

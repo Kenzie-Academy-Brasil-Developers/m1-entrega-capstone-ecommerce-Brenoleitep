@@ -12,11 +12,12 @@ function listarProdutos(produtos, secao) {
 
   secao.innerHTML = ""
 
+
   for (let i = 0; i < produtos.length; i++) {
+
     let produto = produtos[i]
 
     let criarCard = cardProduto(produto)
-
 
     secao.appendChild(criarCard)
   }
