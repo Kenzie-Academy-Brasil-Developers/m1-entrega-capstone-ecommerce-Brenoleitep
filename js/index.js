@@ -127,15 +127,6 @@ btnDark.addEventListener("click", function () {
 
 })
 
-
-
-
-
-
-
-
-
-
 secaoProdutos.addEventListener("click", adicionarProduto)
 
 let carrinhoItens = []
@@ -362,52 +353,6 @@ function adcPasseio(produtos, categoria) {
   listarProdutos(filtrados, ulLista)
 }
 
-
-// catAcessorios.addEventListener('click', function () { adcAcessorios(products, 'Acessórios') })
-
-// function adcAcessorios(products, categoria) {
-//   listagemProdutos.innerHTML = ''
-//   let filtrados = []
-
-//   for (let i = 0; i < products.length; i++) {
-//     let filtro = products[i].categoria.includes(categoria)
-//     if (filtro == true) {
-//       filtrados.push(products[i])
-//     }
-//   }
-//   listarprodutos(filtrados)
-// }
-
-// catUtilidades.addEventListener('click', function () { adcUtilidades(products, 'Utilidades') })
-
-// function adcUtilidades(products, categoria) {
-//   listagemProdutos.innerHTML = ''
-//   let filtrados = []
-
-//   for (let i = 0; i < products.length; i++) {
-//     let filtro = products[i].categoria.includes(categoria)
-//     if (filtro == true) {
-//       filtrados.push(products[i])
-//     }
-//   }
-//   listarprodutos(filtrados)
-// }
-
-
-// catCosmeticos.addEventListener('click', function () { adcCosmeticos(products, 'Cosméticos') })
-
-// function adcCosmeticos(products, categoria) {
-//   listagemProdutos.innerHTML = ''
-//   let filtrados = []
-
-//   for (let i = 0; i < products.length; i++) {
-//     let filtro = products[i].categoria.includes(categoria)
-//     if (filtro == true) {
-//       filtrados.push(products[i])
-//     }
-//   }
-//   listarprodutos(filtrados)
-// }
 
 
 
