@@ -2,16 +2,15 @@
 let secaoProdutos = document.querySelector(".products-content")
 let ulLista = document.querySelector(".listaProdutos")
 let secaoCarrinho = document.querySelector(".carrinho ul")
+let listaHeader = document.querySelector(".listaHeader")
 
 
 secaoProdutos.classList.add("products-content")
 ulLista.classList.add("listaProdutos")
 
-
 function listarProdutos(produtos, secao) {
 
   secao.innerHTML = ""
-
 
   for (let i = 0; i < produtos.length; i++) {
 
@@ -24,7 +23,6 @@ function listarProdutos(produtos, secao) {
 
 }
 listarProdutos(data, ulLista)
-
 
 
 
@@ -285,8 +283,6 @@ function carrinhoInfo(arr) {
 
 }
 
-
-
 function somar(arr) {
   let valorTotal = 0
   for (let i = 0; i < arr.length; i++) {
@@ -296,6 +292,122 @@ function somar(arr) {
 
   return valorTotal
 }
+
+const todosItens = document.createElement("h2")
+todosItens.classList.add("todos")
+todosItens.innerText = "Todos"
+const outrosItens = document.createElement("h2")
+outrosItens.classList.add("outros")
+outrosItens.innerText = "Outros"
+const corridaItens = document.createElement("h2")
+corridaItens.classList.add("corrida")
+corridaItens.innerText = "Corrida"
+const passeioItens = document.createElement("h2")
+passeioItens.classList.add("passeio")
+passeioItens.innerText = "Passeio"
+
+
+listaHeader.append(todosItens, outrosItens, corridaItens, passeioItens)
+
+todosItens.addEventListener("click", function(){adcTodos(data)})
+
+function adcTodos(produtos) {
+  ulLista.innerHTML = ""
+  listarProdutos(produtos, ulLista)
+}
+
+
+corridaItens.addEventListener("click", function () {adcCorrida(data, "Corrida")})
+
+function adcCorrida(produtos, categoria) {
+  ulLista.innerHTML = ""
+  let filtrados = []
+
+  for (let i = 0; i < produtos.length; i++) {
+    let filtro = produtos[i].categoria.includes(categoria)
+    if (filtro == true) {
+      filtrados.push(produtos[i])
+    }
+  }
+  listarProdutos(filtrados, ulLista)
+}
+
+outrosItens.addEventListener("click", function () {adcOutros(data, "Outros")})
+
+function adcOutros(produtos, categoria) {
+  ulLista.innerHTML = ""
+  let filtrados = []
+
+  for (let i = 0; i < produtos.length; i++) {
+    let filtro = produtos[i].categoria.includes(categoria)
+    if (filtro == true) {
+      filtrados.push(produtos[i])
+    }
+  }
+  listarProdutos(filtrados, ulLista)
+}
+
+passeioItens.addEventListener("click", function () {adcPasseio(data, "Passeio")})
+
+function adcPasseio(produtos, categoria) {
+  ulLista.innerHTML = ""
+  let filtrados = []
+
+  for (let i = 0; i < produtos.length; i++) {
+    let filtro = produtos[i].categoria.includes(categoria)
+    if (filtro == true) {
+      filtrados.push(produtos[i])
+    }
+  }
+  listarProdutos(filtrados, ulLista)
+}
+
+
+// catAcessorios.addEventListener('click', function () { adcAcessorios(products, 'Acessórios') })
+
+// function adcAcessorios(products, categoria) {
+//   listagemProdutos.innerHTML = ''
+//   let filtrados = []
+
+//   for (let i = 0; i < products.length; i++) {
+//     let filtro = products[i].categoria.includes(categoria)
+//     if (filtro == true) {
+//       filtrados.push(products[i])
+//     }
+//   }
+//   listarprodutos(filtrados)
+// }
+
+// catUtilidades.addEventListener('click', function () { adcUtilidades(products, 'Utilidades') })
+
+// function adcUtilidades(products, categoria) {
+//   listagemProdutos.innerHTML = ''
+//   let filtrados = []
+
+//   for (let i = 0; i < products.length; i++) {
+//     let filtro = products[i].categoria.includes(categoria)
+//     if (filtro == true) {
+//       filtrados.push(products[i])
+//     }
+//   }
+//   listarprodutos(filtrados)
+// }
+
+
+// catCosmeticos.addEventListener('click', function () { adcCosmeticos(products, 'Cosméticos') })
+
+// function adcCosmeticos(products, categoria) {
+//   listagemProdutos.innerHTML = ''
+//   let filtrados = []
+
+//   for (let i = 0; i < products.length; i++) {
+//     let filtro = products[i].categoria.includes(categoria)
+//     if (filtro == true) {
+//       filtrados.push(products[i])
+//     }
+//   }
+//   listarprodutos(filtrados)
+// }
 
 
 
